@@ -7,7 +7,7 @@
       <h3>January 23<sup>rd</sup>, 2022</h3>
       <h1>Ryane & Emelyne's</h1>
       <h1>Wedding Celebration</h1>
-      <button mat-flat-button>RSVP NOW</button>
+      <button mat-flat-button class="rsvp-btn">RSVP NOW</button>
     </div>
   </div>
   <div class="save-the-date section" fxLayoutAlign="center center">
@@ -28,8 +28,18 @@
     <div fxLayout="column" fxLayoutAlign="center center">
       <h2>Ceremony Details</h2>
       <div class="detail-list">
+        <p><mat-icon>event</mat-icon><span>Sunday, January 23<sup>rd</sup>, 2022</span></p>
+        <p><mat-icon>schedule</mat-icon><span>12:00 PM</span></p>
+        <p><mat-icon>location_on</mat-icon><span>Regent Hotel, Singapore</span></p>
+        <p><mat-icon>map</mat-icon><span>1 Cuscaden Rd, Singapore 249715</span>
+          <a href="https://www.google.com/maps/dir//regent+hotel/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x31da198bae1f9a05:0x4d99caf56b91c3d0?sa=X&ved=2ahUKEwj3z7KTq77zAhXBXSsKHdRLCVYQ9Rd6BAhqEAQ"
+             target="_blank"
+             class="navigate-link"
+          ><mat-icon>assistant_direction</mat-icon></a>
+        </p>
+        <button mat-flat-button class="rsvp-btn">RSVP NOW</button>
       </div>
-      <google-map [options]="gmapOptions"></google-map>
+      <google-map [height]="'300px'" [options]="gmapOptions"></google-map>
     </div>
   </div>
 </div>

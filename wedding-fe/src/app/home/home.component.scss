@@ -53,7 +53,14 @@
 
   .ceremony-details {
     .detail-list {
-
+      margin: 20px;
+      .mat-icon {
+        margin-right: 0.5em;
+      }
+      a.navigate-link {
+        margin-left: 0.5em;
+        color: black;
+      }
     }
 
     .map {

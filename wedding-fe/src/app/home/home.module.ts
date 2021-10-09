@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { UtilsModule } from '../utils/utils.module';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
     FlexLayoutModule,
     UtilsModule,
     GoogleMapsModule,
+    MatIconModule,
   ]
 })
 export class HomeModule { }
