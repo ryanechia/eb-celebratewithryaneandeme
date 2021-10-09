@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { UtilsModule } from '../utils/utils.module';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +21,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MatButtonModule,
     FlexLayoutModule,
-    UtilsModule
+    UtilsModule,
+    GoogleMapsModule,
   ]
 })
 export class HomeModule { }
