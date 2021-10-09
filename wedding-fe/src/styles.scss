@@ -10,3 +10,13 @@ body {
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+mat-toolbar {
+  padding: 8px 16px !important;
+}
+
+mat-sidenav-container {
+  height: unset !important;
+  min-height: unset !important;
+  flex: 1 1 auto;
+}
