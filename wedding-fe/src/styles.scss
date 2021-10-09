@@ -11,8 +11,13 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.transparent {
+  background: rgba(0,0,0,0);
+}
+
 mat-toolbar {
   padding: 8px 16px !important;
+  position: fixed;
 }
 
 mat-sidenav-container {
