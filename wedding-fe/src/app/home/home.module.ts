@@ -18,6 +18,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule.forChild(routes),
     MatButtonModule,
     FlexLayoutModule,
