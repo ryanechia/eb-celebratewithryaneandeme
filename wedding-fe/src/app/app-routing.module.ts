@@ -11,6 +11,10 @@ const routes: Routes = [
     path: 'gallery',
     loadChildren: () => import('./gallery/gallery.module').then(mod => mod.GalleryModule)
   },
+  {
+    path: 'contact-us',
+    loadChildren: () => import('./contact-us/contact-us.module').then(mod => mod.ContactUsModule)
+  },
 ];
 
 @NgModule({
