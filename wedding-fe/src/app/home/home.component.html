@@ -11,6 +11,12 @@
     </div>
   </div>
   <div class="save-the-date section">
+    <date-time-countdown
+      (countdownComplete)="handleComplete()"
+      [targetDateTime]="weddingDateTime"></date-time-countdown>
+    <h2>January 23rd, 2022</h2>
+    <h3>Save The Date</h3>
+
   </div>
   <div class="wedding-info section">
   </div>

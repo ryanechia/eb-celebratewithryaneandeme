@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { UtilsModule } from '../utils/utils.module';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    UtilsModule
   ]
 })
 export class HomeModule { }
