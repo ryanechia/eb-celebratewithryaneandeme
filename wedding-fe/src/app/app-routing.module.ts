@@ -15,6 +15,7 @@ const routes: Routes = [
     path: 'contact-us',
     loadChildren: () => import('./contact-us/contact-us.module').then(mod => mod.ContactUsModule)
   },
+  { path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({
