@@ -1,7 +1,9 @@
 <div class="page-container">
   <div class="hero-banner">
     <div class="dark-overlay"></div>
-    <div class="hero-banner-text-container">
+    <div class="hero-banner-text-container"
+         [ngClass.lt-md]="'position-center'"
+         [ngClass.gt-sm]="'position-left'">
       <h3>January 23rd, 2022</h3>
       <h1>Ryane & Emelyne's</h1>
       <h1>Wedding Celebration</h1>
