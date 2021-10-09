@@ -10,16 +10,23 @@
       <button mat-flat-button>RSVP NOW</button>
     </div>
   </div>
-  <div class="save-the-date section">
-    <date-time-countdown
-      (countdownComplete)="handleComplete()"
-      [targetDateTime]="weddingDateTime"></date-time-countdown>
-    <h2>January 23<sup>rd</sup>, 2022</h2>
-    <h3>Save The Date</h3>
-
+  <div class="save-the-date section" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <date-time-countdown
+        (countdownComplete)="handleComplete()"
+        [targetDateTime]="weddingDateTime"></date-time-countdown>
+      <h2>January 23<sup>rd</sup>, 2022</h2>
+      <h3>Save The Date</h3>
+    </div>
   </div>
-  <div class="wedding-info section">
+  <div class="wedding-info section" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <h2>Wedding Info</h2>
+    </div>
   </div>
-  <div class="ceremony-details section">
+  <div class="ceremony-details section" fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <h2>Ceremony Details</h2>
+    </div>
   </div>
 </div>
