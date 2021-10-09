@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { map, shareReplay, takeUntil, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
