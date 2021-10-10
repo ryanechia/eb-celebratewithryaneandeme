@@ -6,7 +6,8 @@
   flex-direction: column;
 
   .section {
-    flex: 0 0 70vh;
+    height: 70vh;
+    flex: 1 0 auto;
   }
 
   #hero-banner {
@@ -47,6 +48,7 @@
   }
 
   #save-the-date {
+    height: 40vh;
   }
 
   #ceremony-details {
