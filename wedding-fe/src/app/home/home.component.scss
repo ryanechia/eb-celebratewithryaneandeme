@@ -8,6 +8,12 @@
   .section {
     flex: 1 0 auto;
     background: transparent;
+
+    .text-content {
+      max-width: 500px;
+      padding: 0 10px;
+      text-align: center;
+    }
   }
 
   #hero-banner {
