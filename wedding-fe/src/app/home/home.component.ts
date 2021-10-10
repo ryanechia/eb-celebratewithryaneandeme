@@ -15,6 +15,9 @@ export class HomeComponent implements OnInit {
   private apiLoaded: Observable<boolean>;
   public gmapOptions: google.maps.MapOptions = {
     fullscreenControl: false,
+    streetViewControl: false,
+    clickableIcons: false,
+    controlSize: 25,
     center: this.regentHotelSingaporeCoords,
     zoom: 16
   };
