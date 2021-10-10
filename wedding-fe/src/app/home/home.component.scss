@@ -1,17 +1,10 @@
 .portrait-image-container {
   height: 400px;
+  max-width: 500px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  &.small {
-    max-width: 300px;
-  }
-
-  &.large {
-    max-width: 500px;
-  }
 
   img {
     height: 100%;

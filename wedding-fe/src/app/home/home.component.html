@@ -69,11 +69,10 @@
     <div [gdAreas.gt-sm]="'image content'"
          [gdColumn.gt-sm]="'auto'"
          [gdAreas.lt-md]="'image | content'"
-         [gdColumn.lt-md]="'300px 500px'">
+         [gdColumn.lt-md]="'500px 500px'"
+         [gdGap]="'20px'">
       <div class="portrait-image-container"
-           [gdArea]="'image'"
-           [ngClass.gt-sm]="'small'"
-           [ngClass.lt-md]="'large'">
+           [gdArea]="'image'">
         <img src="assets/13-years-m.jpg">
       </div>
       <div class="text-content" fxLayout="column" fxLayoutAlign="center center" [gdArea]="'content'">
