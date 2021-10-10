@@ -9,7 +9,7 @@
     flex: 0 0 70vh;
   }
 
-  .hero-banner {
+  #hero-banner {
     background-image: url("/assets/hero-banner-L.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,10 +46,10 @@
     }
   }
 
-  .save-the-date {
+  #save-the-date {
   }
 
-  .ceremony-details {
+  #ceremony-details {
     .detail-list {
       margin: 20px;
       .mat-icon {

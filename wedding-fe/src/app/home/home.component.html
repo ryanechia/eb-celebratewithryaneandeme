@@ -1,5 +1,5 @@
 <div class="page-container">
-  <div class="hero-banner section">
+  <div id="hero-banner" class="section">
     <div class="dark-overlay"></div>
     <div class="hero-banner-text-container"
          [ngClass.lt-md]="'position-center'"
@@ -10,7 +10,7 @@
       <button mat-flat-button class="rsvp-btn">RSVP NOW</button>
     </div>
   </div>
-  <div class="save-the-date section" fxLayoutAlign="center center">
+  <div id="save-the-date" class="section" fxLayoutAlign="center center">
     <div fxLayout="column" fxLayoutAlign="center center">
       <date-time-countdown
         (countdownComplete)="handleComplete()"
@@ -19,12 +19,12 @@
       <h3>Save The Date</h3>
     </div>
   </div>
-  <div class="wedding-info section" fxLayoutAlign="center center">
+  <div id="wedding-info" class="section" fxLayoutAlign="center center">
     <div fxLayout="column" fxLayoutAlign="center center">
       <h2>Wedding Info</h2>
     </div>
   </div>
-  <div class="ceremony-details section" fxLayout="column" fxLayoutAlign="center center">
+  <div id="ceremony-details" class="section" fxLayout="column" fxLayoutAlign="center center">
     <div fxLayout="column" fxLayoutAlign="center center">
       <h2>Ceremony Details</h2>
       <div class="detail-list">
