@@ -1,14 +1,38 @@
 <div class="timer" *ngIf="(timeLeft$ | async) as t; else blankTimer">
-  <span id="days"> {{t.daysToDday}} </span>Days
-  <span id="hours"> {{t.hoursToDday}} </span>Hours
-  <span id="minutes"> {{t.minutesToDday}} </span>Min
-  <span id="seconds"> {{t.secondsToDday}} </span>S
+  <div class="counter-box">
+    <div class="counter"> {{t.daysToDday}} </div>
+    <span>Days</span>
+  </div>
+  <div class="counter-box">
+    <div class="counter"> {{t.hoursToDday}} </div>
+    <span>Hours</span>
+  </div>
+  <div class="counter-box">
+    <div class="counter"> {{t.minutesToDday}} </div>
+    <span>Mins</span>
+  </div>
+  <div class="counter-box">
+    <div class="counter"> {{t.secondsToDday}} </div>
+    <span>Secs</span>
+  </div>
 </div>
 <ng-template #blankTimer>
   <div class="timer">
-    <span id="days"> 0 </span>Days
-    <span id="hours"> 0 </span>Hours
-    <span id="minutes"> 0 </span>Min
-    <span id="seconds"> 0 </span>S
+    <div class="counter-box">
+      <div class="days"> 0 </div>
+      <span>Days</span>
+    </div>
+    <div class="counter-box">
+      <div class="hours"> 0 </div>
+      <span>Hours</span>
+    </div>
+    <div class="counter-box">
+      <div class="minutes"> 0 </div>
+      <span>Mins</span>
+    </div>
+    <div class="counter-box">
+      <div class="seconds"> 0 </div>
+      <span>Secs</span>
+    </div>
   </div>
 </ng-template>
