@@ -51,6 +51,13 @@
     height: 40vh;
   }
 
+  #wedding-info {
+    .infospace {
+      max-width: 500px;
+      height: 50%;
+    }
+  }
+
   #ceremony-details {
     .detail-list {
       margin: 20px;
