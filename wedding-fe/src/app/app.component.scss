@@ -6,7 +6,11 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background: rgba(128,128,128,0.5);
+  background-image: url("/assets/app-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   .example-spacer {
     flex: 1 1 auto;
   }

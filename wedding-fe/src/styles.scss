@@ -34,7 +34,6 @@ h1 {
 .section {
   width: 100%;
   height: 70vh;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 mat-toolbar {
@@ -47,6 +46,7 @@ mat-sidenav-container {
   height: unset !important;
   min-height: unset !important;
   flex: 1 1 auto;
+  background: transparent !important;
 }
 
 .mat-icon {
