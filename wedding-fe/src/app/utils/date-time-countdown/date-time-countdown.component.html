@@ -1,4 +1,7 @@
-<div class="timer" *ngIf="(timeLeft$ | async) as t; else blankTimer">
+<div class="timer"
+     [ngClass.gt-sm]="'large'"
+     [ngClass.lt-md]="'small'"
+     *ngIf="(timeLeft$ | async) as t; else blankTimer">
   <div class="counter-box">
     <div class="counter"> {{t.daysToDday}} </div>
     <span>Days</span>
@@ -20,7 +23,9 @@
   </div>
 </div>
 <ng-template #blankTimer>
-  <div class="timer">
+  <div class="timer"
+       [ngClass.gt-sm]="'large'"
+       [ngClass.lt-md]="'small'">
     <div class="counter-box">
       <div class="counter"> 0 </div>
       <span>Days</span>

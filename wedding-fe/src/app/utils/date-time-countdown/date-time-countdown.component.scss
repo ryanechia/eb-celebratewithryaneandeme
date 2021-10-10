@@ -2,6 +2,51 @@
   display: flex;
   flex-direction: row;
   font-family:  "Arima Madurai", Roboto, "Helvetica Neue", sans-serif;
+
+  &.large {
+    .counter {
+      font-size: 32px;
+      line-height: 32px;
+      padding-bottom: 12px;
+    }
+
+    .counter-box {
+      width: 100px;
+      padding: 15px 5px;
+      margin: 10px;
+      > span {
+        font-size: 28px;
+      }
+    }
+
+    .counter-seperator {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  &.small {
+    .counter {
+      font-size: 24px;
+      line-height: 24px;
+      padding-bottom: 4px;
+    }
+
+    .counter-box {
+      width: 60px;
+      padding: 10px 5px 5px;
+      margin: 5px;
+
+      > span {
+        font-size: 16px;
+      }
+    }
+
+    .counter-seperator {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
 }
 
 .counter-box {
@@ -9,26 +54,11 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  width: 100px;
-  padding: 15px 5px;
-  margin: 10px;
   background: whitesmoke;
   border-radius: 10px;
-
-  .counter {
-    font-size: 32px;
-    line-height: 32px;
-    padding-bottom: 12px;
-  }
-
-  > span {
-    font-size: 28px;
-  }
 }
 
 .counter-seperator {
-  font-size: 32px;
-  line-height: 32px;
   display: flex;
   align-self: center;
 }
