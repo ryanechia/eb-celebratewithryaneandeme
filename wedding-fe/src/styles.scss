@@ -36,6 +36,16 @@ h1 {
   height: 70vh;
 }
 
+.section-seperator {
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
 mat-toolbar {
   padding: 8px 16px !important;
   position: fixed;
