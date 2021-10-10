@@ -28,22 +28,20 @@
       text-align: center;
 
       // responsive positions
-      transition: left 1s, transform 1s;
+      transition: left 0.5s, transform 0.5s, width 0.5s;
 
       &.position-left {
         top: 50%;
         left: 25%;
         transform: translate(-25%, -50%);
+        width: 40%;
       }
 
       &.position-center {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
-
-      h1 {
-        font-family: "Arima Madurai", cursive;
+        width: 75%;
       }
     }
   }
@@ -58,7 +56,6 @@
         margin-right: 0.5em;
       }
       a.navigate-link {
-        margin-left: 0.5em;
         color: black;
       }
     }
