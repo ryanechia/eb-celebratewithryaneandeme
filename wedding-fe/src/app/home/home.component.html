@@ -71,7 +71,9 @@
         </p>
         <button mat-flat-button class="rsvp-btn">RSVP NOW</button>
       </div>
-      <google-map [height]="'300px'" [options]="gmapOptions" [fxLayout]=""></google-map>
+      <google-map class="map" height="null" width="null" [options]="gmapOptions"
+                  [ngClass.gt-sm]="'large'"
+                  [ngClass.lt-md]="'small'"></google-map>
     </div>
   </div>
   <span class="section-seperator">~<mat-icon>favorite_border</mat-icon>~</span>
