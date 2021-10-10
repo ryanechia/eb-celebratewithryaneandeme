@@ -82,13 +82,22 @@
 
   #ceremony-details {
     .detail-list {
+      display: flex;
+      flex-direction: column;
       margin: 20px;
+
       .mat-icon {
         margin-right: 0.5em;
       }
+
       a.navigate-link {
         color: black;
       }
+
+      .rsvp-btn {
+        align-self: center;
+      }
+
     }
 
     .map {
