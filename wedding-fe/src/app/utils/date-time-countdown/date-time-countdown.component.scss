@@ -1,13 +1,13 @@
 .timer {
   display: flex;
   flex-direction: row;
+  font-family:  "Arima Madurai", Roboto, "Helvetica Neue", sans-serif;
 }
 
 .counter-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family:  "Arima Madurai", Roboto, "Helvetica Neue", sans-serif;
   height: 100%;
   width: 100px;
   padding: 15px 5px;
@@ -24,4 +24,11 @@
   > span {
     font-size: 28px;
   }
+}
+
+.counter-seperator {
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  align-self: center;
 }
