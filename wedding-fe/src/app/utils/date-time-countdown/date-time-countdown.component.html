@@ -2,22 +2,22 @@
      [ngClass.gt-sm]="'large'"
      [ngClass.lt-md]="'small'"
      *ngIf="(timeLeft$ | async) as t; else blankTimer">
-  <div class="counter-box">
+  <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
     <div class="counter"> {{t.daysToDday}} </div>
     <span>Days</span>
   </div>
   <div class="counter-seperator">:</div>
-  <div class="counter-box">
+  <div class="counter-box"  [ngStyle]="{'background-color': boxBgColor}">
     <div class="counter"> {{t.hoursToDday}} </div>
     <span>Hours</span>
   </div>
   <div class="counter-seperator">:</div>
-  <div class="counter-box">
+  <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
     <div class="counter"> {{t.minutesToDday}} </div>
     <span>Mins</span>
   </div>
   <div class="counter-seperator">:</div>
-  <div class="counter-box">
+  <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
     <div class="counter"> {{t.secondsToDday}} </div>
     <span>Secs</span>
   </div>
@@ -26,22 +26,22 @@
   <div class="timer"
        [ngClass.gt-sm]="'large'"
        [ngClass.lt-md]="'small'">
-    <div class="counter-box">
+    <div class="counter-box"[ngStyle]="{'background-color': boxBgColor}">
       <div class="counter"> 0 </div>
       <span>Days</span>
     </div>
     <div class="counter-seperator">:</div>
-    <div class="counter-box">
+    <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
       <div class="counter"> 0 </div>
       <span>Hours</span>
     </div>
     <div class="counter-seperator">:</div>
-    <div class="counter-box">
+    <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
       <div class="counter"> 0 </div>
       <span>Mins</span>
     </div>
     <div class="counter-seperator">:</div>
-    <div class="counter-box">
+    <div class="counter-box" [ngStyle]="{'background-color': boxBgColor}">
       <div class="counter"> 0 </div>
       <span>Secs</span>
     </div>

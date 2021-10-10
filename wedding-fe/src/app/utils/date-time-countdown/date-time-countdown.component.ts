@@ -20,6 +20,12 @@ export class DateTimeCountdownComponent implements OnInit {
   @Input()
   public targetDateTime!: Date;
 
+  /**
+   * Accepts standard CSS color properties
+   */
+  @Input()
+  public boxBgColor: string = '#FFFFFF';
+
   @Output()
   public countdownComplete: EventEmitter<boolean> = new EventEmitter<boolean>();
 
