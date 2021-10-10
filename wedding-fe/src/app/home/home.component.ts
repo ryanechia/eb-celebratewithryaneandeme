@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { catchError, map } from 'rxjs/operators';
+import { MatDialog } from '@angular/material/dialog';
+import { SocialPopupComponent } from '../utils/social-popup/social-popup.component';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +23,10 @@ export class HomeComponent implements OnInit {
     center: this.regentHotelSingaporeCoords,
     zoom: 16
   };
-  constructor(httpClient: HttpClient) {
+  constructor(
+    httpClient: HttpClient,
+    private dialog: MatDialog
+  ) {
     this.apiLoaded = httpClient.jsonp('https://maps.googleapis.com/maps/api/js?key=AIzaSyBw3DC5aYlm7X3c4ZM3wdGL3sqkjqV16nI', 'callback')
       .pipe(
         map(() => true),
@@ -34,5 +39,12 @@ export class HomeComponent implements OnInit {
 
   handleComplete(): void {
     console.log('countdown done1');
+  }
+
+  viewHashtags(): void {
+    this.dialog.open(SocialPopupComponent, {
+      width: '40vw',
+      disableClose: false
+    })
   }
 }

@@ -8,6 +8,7 @@ import { UtilsModule } from '../utils/utils.module';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
     UtilsModule,
     GoogleMapsModule,
     MatIconModule,
+    MatDialogModule
   ]
 })
 export class HomeModule { }
