@@ -20,7 +20,7 @@ h1 {
 
 .menu-bar {
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .dark-overlay {
@@ -59,6 +59,14 @@ mat-sidenav-container {
   min-height: unset !important;
   flex: 1 1 auto;
   background: transparent !important;
+
+  mat-sidenav {
+    width: 200px;
+
+    .mat-list-item-content {
+      justify-content: center;
+    }
+  }
 }
 
 .mat-icon {
@@ -68,5 +76,20 @@ mat-sidenav-container {
 google-map {
   .map-container {
     height: 100%;
+  }
+}
+
+.active {
+  border-bottom: 2px rgba(212, 143, 76, 1) solid !important;
+}
+
+.active-list-item {
+  .link-item {
+    border-bottom: 3px rgba(212, 143, 76, 1) solid;
+    width: 60%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
   }
 }

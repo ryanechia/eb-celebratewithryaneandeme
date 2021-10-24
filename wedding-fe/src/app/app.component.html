@@ -1,10 +1,10 @@
 <div class="app-container">
   <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column" position="end">
+    <mat-sidenav #sidenav fxLayout="column" position="end" mode="push">
       <mat-nav-list (click)="sidenav.close()">
-        <a mat-list-item routerLink="/home" routerLinkActive="active">Home</a>
-        <a mat-list-item routerLink="/gallery" routerLinkActive="active">Gallery</a>
-        <a mat-list-item routerLink="/rsvp" routerLinkActive="active">RSVP</a>
+        <mat-list-item routerLink="/home" routerLinkActive="active-list-item"><div class="link-item">Home</div></mat-list-item>
+        <mat-list-item routerLink="/gallery" routerLinkActive="active-list-item"><div class="link-item">Gallery</div></mat-list-item>
+        <mat-list-item routerLink="/rsvp" routerLinkActive="active-list-item"><div class="link-item">RSVP</div></mat-list-item>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
