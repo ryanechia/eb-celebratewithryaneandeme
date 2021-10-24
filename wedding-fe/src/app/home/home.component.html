@@ -7,7 +7,7 @@
       <h3>Sunday, January 23<sup>rd</sup>, 2022</h3>
       <h1>Ryane & Emelyne's</h1>
       <h1>Wedding Celebration Lunch</h1>
-      <button mat-flat-button class="rsvp-btn" [routerLink]="'/rsvp'">RSVP NOW</button>
+      <button mat-raised-button color="primary" class="rsvp-btn" [routerLink]="'/rsvp'">RSVP NOW</button>
     </div>
   </div>
   <span class="section-seperator">~<mat-icon>favorite_border</mat-icon>~</span>
@@ -39,7 +39,7 @@
         </div>
         <h2>Share Our Day</h2>
         <div class="infospace">
-          <p>Share your pictures on the day with <button mat-stroked-button (click)="viewHashtags()">#RYANEEME22M</button> on your socials</p>
+          <p>Share your pictures on the day with <button mat-stroked-button color="primary" (click)="viewHashtags()">#RYANEEME22M</button> on your socials</p>
         </div>
       </div>
       <div class="portrait-image-container"
@@ -73,7 +73,7 @@
           <mat-icon>assistant_direction</mat-icon>
           <span>Get Directions</span></a>
         </p>
-        <button mat-flat-button class="rsvp-btn" [routerLink]="'/rsvp'">RSVP NOW</button>
+        <button mat-raised-button color="primary" class="rsvp-btn" [routerLink]="'/rsvp'">RSVP NOW</button>
       </div>
       <google-map class="map" height="null" width="null" [options]="gmapOptions"
                   [ngClass.gt-sm]="'large'"
