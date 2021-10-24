@@ -21,7 +21,8 @@ export class HomeComponent implements OnInit {
     clickableIcons: false,
     controlSize: 25,
     center: this.regentHotelSingaporeCoords,
-    zoom: 16
+    zoom: 16,
+    gestureHandling: 'cooperative'
   };
   constructor(
     httpClient: HttpClient,
