@@ -81,12 +81,12 @@ google-map {
 }
 
 .active {
-  border-bottom: 2px rgba(212, 143, 76, 1) solid !important;
+  border-bottom: 2px $light-accent-color solid !important;
 }
 
 .active-list-item {
   .link-item {
-    border-bottom: 3px rgba(212, 143, 76, 1) solid;
+    border-bottom: 3px $light-accent-color solid;
     width: 60%;
     height: 50%;
 
