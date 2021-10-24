@@ -1,0 +1,51 @@
+@use '~@angular/material' as mat;
+@include mat.core();
+
+$bronze-palette: (
+  50: #faf2e5,
+  100: #f3debf,
+  200: #ebca97,
+  300: #e4b572,
+  400: #dfa75c,
+  500: #d99a51,
+  600: #d4904c,
+  700: #cc8346,
+  800: #c37742,
+  900: #b3663e,
+  A100: #ffbf79,
+  A200: #d38f4b,
+  A400: #9e611e,
+  A700: #6b3700,
+  contrast: (
+    50: mat-$black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: $white-87-opacity,
+    600: $white-87-opacity,
+    700: $white-87-opacity,
+    800: $white-87-opacity,
+    A100: $black-87-opacity,
+    A200: $black-87-opacity,
+    A400: white,
+    A700: white,
+  )
+);
+
+$light-primary: mat.define-palette($bronze-palette);
+$light-accent: mat.define-palette($bronze-palette, A200, A100, A400);
+
+$light-theme: mat.define-light-theme((
+  color: (
+    primary: $light-primary,
+    accent: $light-accent,
+  )
+));
+
+// Apply the light theme by default
+@include mat.core-theme($light-theme);
+@include mat.button-theme($light-theme);
+
+$light-primary-color: mat.get-color-from-palette($bronze-palette, 600);
+$light-accent-color: mat.get-color-from-palette($bronze-palette, A200);
