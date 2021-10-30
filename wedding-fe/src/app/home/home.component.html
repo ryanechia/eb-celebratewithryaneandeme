@@ -113,8 +113,8 @@
       </div>
     </div>
   </div>
-  <span class="section-seperator">~<mat-icon>favorite_border</mat-icon>~</span>
-  <div id="album" class="section" fxLayout="column" fxLayoutAlign="center center">
+  <span class="section-seperator" fxShow.lt-md="false">~<mat-icon>favorite_border</mat-icon>~</span>
+  <div id="album" class="section" fxShow.lt-md="false" fxLayout="column" fxLayoutAlign="center center">
     <h2>Wedding Album</h2>
     <app-flipbook [pages$]="flipbookPages"></app-flipbook>
   </div>
