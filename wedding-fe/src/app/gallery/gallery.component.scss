@@ -4,4 +4,28 @@
   display: flex;
   flex-direction: column;
   background: transparent;
+  align-items: center;
+
+  .grid-gallery {
+    background: white;
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .grid-item {
+      height: 200px; // to be changed
+      flex-grow: 1;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
+    }
+    .grid-filler {
+      flex-grow: 10;
+    }
+  }
 }
