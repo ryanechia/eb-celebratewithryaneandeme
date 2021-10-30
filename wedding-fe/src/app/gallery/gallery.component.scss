@@ -15,6 +15,7 @@
     .grid-item {
       height: 200px; // to be changed
       flex-grow: 1;
+      transition: transform 0.1s ease-in-out;
 
       img {
         max-height: 100%;
@@ -22,6 +23,11 @@
         object-fit: cover;
         vertical-align: bottom;
         width: 100%;
+        cursor: pointer;
+      }
+
+      &:hover {
+        transform: scale(1.03);
       }
     }
     .grid-filler {
