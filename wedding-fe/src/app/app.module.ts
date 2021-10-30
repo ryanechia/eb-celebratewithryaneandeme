@@ -40,7 +40,9 @@ import { GALLERY_CONFIG, GalleryModule } from 'ng-gallery';
     provide: GALLERY_CONFIG,
     useValue: {
       dots: true,
-      imageSize: 'contain'
+      imageSize: 'contain',
+      gestures: true,
+      loop: true
     }
   }],
   bootstrap: [ AppComponent ]
