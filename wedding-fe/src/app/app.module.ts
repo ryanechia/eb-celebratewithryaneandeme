@@ -11,6 +11,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
+import { GALLERY_CONFIG, GalleryModule } from 'ng-gallery';
 
 @NgModule({
   declarations: [
@@ -32,8 +33,16 @@ import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
     FlexModule,
     FlexLayoutModule,
     MatListModule,
+
+    GalleryModule
   ],
-  providers: [],
+  providers: [{
+    provide: GALLERY_CONFIG,
+    useValue: {
+      dots: true,
+      imageSize: 'cover'
+    }
+  }],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
