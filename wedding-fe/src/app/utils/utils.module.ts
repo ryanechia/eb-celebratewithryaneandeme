@@ -4,20 +4,23 @@ import { DateTimeCountdownComponent } from './date-time-countdown/date-time-coun
 import { ExtendedModule } from '@angular/flex-layout';
 import { SocialPopupComponent } from './social-popup/social-popup.component';
 import { MaterialElevationDirective } from './material-elevation.directive';
+import { FlipbookComponent } from './flipbook/flipbook.component';
 
 
 @NgModule({
   declarations: [
     DateTimeCountdownComponent,
     SocialPopupComponent,
-    MaterialElevationDirective
+    MaterialElevationDirective,
+    FlipbookComponent
   ],
   imports: [
     CommonModule,
     ExtendedModule
   ],
   exports: [
-    DateTimeCountdownComponent
+    DateTimeCountdownComponent,
+    FlipbookComponent
   ],
 })
 export class UtilsModule {

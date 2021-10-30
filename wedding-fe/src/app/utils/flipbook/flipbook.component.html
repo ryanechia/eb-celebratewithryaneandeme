@@ -1,0 +1,9 @@
+<div class="flipbook-container">
+  <div id="book" *ngIf="pages$ | async as pages">
+    <div class="book-page"
+         [attr.data-density]="page.pageDensity"
+         *ngFor="let page of pages">
+      <img src="{{page.imageUrl}}">
+    </div>
+  </div>
+</div>
