@@ -31,7 +31,7 @@ export class FlipbookComponent implements OnInit, OnChanges, AfterViewInit {
           this.pageflip = new PageFlip(document.getElementById('book'), {
             width: 500, // base page width
             height: 400, // base page height
-
+            usePortrait: false,
             size: "stretch", // stretch album to screen width
             // set threshold values:
             minWidth: 500,
