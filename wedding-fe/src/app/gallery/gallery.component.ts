@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GalleryItem, ImageItem } from 'ng-gallery';
+import { Gallery, GalleryItem, ImageItem } from 'ng-gallery';
+import { Lightbox } from 'ng-gallery/lightbox';
 
 @Component({
   selector: 'app-gallery',
@@ -8,7 +9,7 @@ import { GalleryItem, ImageItem } from 'ng-gallery';
 })
 export class GalleryComponent implements OnInit {
   images: GalleryItem[];
-  constructor() {
+  constructor(public gallery: Gallery, public lightbox: Lightbox) {
     this.images = [
       new ImageItem({ src: 'assets/photos/IMG_3927.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_3927.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_3984.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_3984.jpeg' }),
@@ -34,6 +35,8 @@ export class GalleryComponent implements OnInit {
       new ImageItem({ src: 'assets/photos/IMG_4716.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4716.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4738.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4738.jpeg' }),
     ];
+
+    this.gallery.ref('lightbox').load(this.images);
   }
 
   ngOnInit(): void {

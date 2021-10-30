@@ -1,6 +1,7 @@
 <div class="page-container">
-  <div class="grid-gallery" gallerize>
-    <div class="grid-item" *ngFor="let image of images">
+  <div class="grid-gallery">
+    <div class="grid-item" *ngFor="let image of images; let i = index"
+    (click)="lightbox.open(i, 'lightbox', {panelClass: 'fullscreen'})">
       <img [src]="image.data.thumb"
            [attr.imageSrc]="image.data.src"
            [attr.thumbSrc]="image.data.thumb">
