@@ -1,1 +1,10 @@
-<p>gallery works!</p>
+<div class="page-container">
+  <div class="grid-gallery" gallerize>
+    <div class="grid-item" *ngFor="let image of images">
+      <img [src]="image.data.thumb"
+           [attr.imageSrc]="image.data.src"
+           [attr.thumbSrc]="image.data.thumb">
+    </div>
+
+  </div>
+</div>
