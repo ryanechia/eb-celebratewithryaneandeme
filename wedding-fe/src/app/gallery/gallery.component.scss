@@ -30,6 +30,19 @@
         cursor: pointer;
       }
     }
+
+    &.small-screen {
+      flex-direction: row;
+
+      .grid-item {
+        max-height: 20vh;
+        max-width: 50%;
+
+        img {
+          height: 100%
+        }
+      }
+    }
     .grid-filler {
       flex-grow: 10;
     }

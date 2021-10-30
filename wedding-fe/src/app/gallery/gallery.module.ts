@@ -4,6 +4,7 @@ import { GalleryComponent } from './gallery.component';
 import { RouterModule, Routes } from '@angular/router';
 import { GalleryModule as NgGalleryModule } from 'ng-gallery';
 import { LightboxModule } from 'ng-gallery/lightbox';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
   { path: '', component: GalleryComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     NgGalleryModule,
-    LightboxModule
+    LightboxModule,
+    FlexLayoutModule
   ]
 })
 export class GalleryModule { }
