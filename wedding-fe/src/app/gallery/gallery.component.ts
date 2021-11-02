@@ -22,7 +22,6 @@ export class GalleryComponent implements OnInit {
       new ImageItem({ src: 'assets/photos/IMG_4251.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4251.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4271.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4271.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4286.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4286.jpeg' }),
-      new ImageItem({ src: 'assets/photos/IMG_4337.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4337.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4386.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4386.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4389.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4389.jpeg' }),
       new ImageItem({ src: 'assets/photos/IMG_4473.jpg', thumb: 'assets/photos/thumbnails/THUMB_IMG_4473.jpeg' }),
