@@ -3,8 +3,12 @@
   flex-direction: column;
   align-items: center;
 
+  .mat-h2 {
+    text-align: center;
+  }
+
   .link-container {
-    width: 50%;
+    max-width: 600px;
 
     .link {
       padding: 10px 5px;
