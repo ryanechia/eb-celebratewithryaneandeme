@@ -1,7 +1,7 @@
 .page-container {
   padding-top: 20px;
   width: 100%;
-  min-height: 100%;
+  height: calc(100% - 84px); // less padding less large top bar
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -16,6 +16,9 @@
     iframe {
       width: 100%;
       height: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
     }
   }
 }
