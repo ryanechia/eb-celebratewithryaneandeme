@@ -5,6 +5,7 @@ import { ExtendedModule } from '@angular/flex-layout';
 import { SocialPopupComponent } from './social-popup/social-popup.component';
 import { MaterialElevationDirective } from './material-elevation.directive';
 import { FlipbookComponent } from './flipbook/flipbook.component';
+import { MatRippleModule } from '@angular/material/core';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FlipbookComponent } from './flipbook/flipbook.component';
   ],
   imports: [
     CommonModule,
-    ExtendedModule
+    ExtendedModule,
+    MatRippleModule
   ],
   exports: [
     DateTimeCountdownComponent,
