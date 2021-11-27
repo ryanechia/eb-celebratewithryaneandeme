@@ -70,7 +70,8 @@ export class HomeComponent implements OnInit {
 
   viewHashtags(): void {
     this.dialog.open(SocialPopupComponent, {
-      width: '40vw',
+      width: '80vw',
+      maxWidth: '600px',
       disableClose: false
     });
   }
